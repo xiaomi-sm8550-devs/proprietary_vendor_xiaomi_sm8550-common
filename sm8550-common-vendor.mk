@@ -846,7 +846,6 @@ PRODUCT_PACKAGES += \
     se_nq_extn_client \
     sensors.ssc \
     libasphere \
-    libmisoundfx \
     libquasar \
     libshoebox \
     libswgamedap \
