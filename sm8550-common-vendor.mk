@@ -430,6 +430,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6490/WCNSS_qcom_cfg.ini \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/xiaomi_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list.xml \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/xiaomi_ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list_preference.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/firmware/a740_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_sqe.fw \
     vendor/xiaomi/sm8550-common/proprietary/vendor/firmware/a740_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a740_zap.b00 \
