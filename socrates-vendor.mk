@@ -2078,3 +2078,8 @@ PRODUCT_PACKAGES += \
     mtd@1.3 \
     tidad@1.2 \
     vendor.xiaomi.hardware.otrpagent@2.0-service
+
+PRODUCT_PACKAGES += \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
