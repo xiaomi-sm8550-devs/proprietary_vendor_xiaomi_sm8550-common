@@ -117,6 +117,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/LUT.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT.txt \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/LUT0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT0.txt \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/LUT1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT1.txt \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/LUT2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/display/LUT2.txt \
@@ -220,6 +221,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.xiaomi.modem.qms@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.modem.qms@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
@@ -427,6 +429,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-impl \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.qti.hardware.soter@1.0-impl \
+    vendor.xiaomi.hardware.displayfeature@1.0-impl \
     vulkan.adreno \
     lib-imscommon \
     lib-imsdpl \
@@ -461,6 +464,8 @@ PRODUCT_PACKAGES += \
     libQnnHtpV73Stub \
     libQnnSystem \
     libQtiRilLoadable \
+    libSNPE \
+    libSNPESample \
     libSensorsInterface \
     libTouchInputVM \
     libTrustedInput \
@@ -509,6 +514,8 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdigital-dimming \
     libdisp-aba \
+    libdisplayfeature \
+    libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
@@ -523,6 +530,7 @@ PRODUCT_PACKAGES += \
     libesesbprovision \
     libeva \
     libeva_util \
+    libeyecare \
     libfastcvdsp_stub \
     libfastcvopt \
     libfcsam \
@@ -584,6 +592,8 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libmemutils \
+    libmi-stc-HW-modulate \
+    libmilut \
     libminkdescriptor \
     libminksocket_vendor \
     libmisight \
@@ -685,6 +695,7 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqrtrclient \
     libqseed3 \
+    libqservice \
     libqsocket \
     libqti-perfd-client \
     libqti-perfd \
@@ -996,16 +1007,36 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccsyshal_aidl-V1-ndk \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     consumerir.qcom \
+    displayfeature.default \
+    libMiDispDevManager \
+    libadaptivehdr \
     libaudioroute_ext \
+    libcolortempmode \
+    libdisplaycount \
+    libdisplaylog \
+    libdither \
+    libflatmode \
+    libfpsmonitor \
+    libhdrmode \
+    libhistprocess \
     libmfido \
+    libmiBrightness \
     libmiClstc \
+    libmiSensorCtrl \
     libmiXmlParser \
+    libmi_dspp \
     libmlipay \
     libmlipay@1.1 \
     libmt \
     libmt@1.3 \
+    libpaperMode \
+    librhytheyecare \
+    libsdr2hdr \
+    libsre \
     libstnfc-auth \
     libtida@1.2 \
+    libtruetone \
+    libvideomode \
     libwvkeybox \
     nfc_nci.nqx.default.hw \
     nfc_nci.st21nfc.st \
@@ -1103,6 +1134,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vpp@2.0-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
     vendor.qti.qegahal-service.xml \
+    vendor.xiaomi.hardware.displayfeature@1.0-service.xml \
     vendor.xiaomi.modem.qms.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     manifest_vendor.xiaomi.hardware.mfidoca.xml \
@@ -1124,6 +1156,7 @@ PRODUCT_PACKAGES += \
     cnd \
     cnss-daemon \
     diag-router \
+    displayfeature \
     dpmQmiMgr \
     dspservice \
     edgnss-daemon \
@@ -1153,6 +1186,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.media.c2@1.0-service \
     vendor.qti.media.c2audio@1.0-service \
     vendor.qti.secure_element@1.2-service \
+    vendor.xiaomi.hardware.displayfeature@1.0-service \
     vendor.xiaomi.modem.qms@1.0-service \
     ims_rtp_daemon \
     imsdaemon \
