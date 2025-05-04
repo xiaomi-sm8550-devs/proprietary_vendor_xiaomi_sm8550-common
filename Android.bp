@@ -12600,6 +12600,7 @@ cc_prebuilt_library_shared {
                 "libqmi_cci",
                 "libqmi_encdec",
                 "libsnsutils",
+                "libdiag",
                 "libsnsapi",
                 "libc++",
                 "libc",
