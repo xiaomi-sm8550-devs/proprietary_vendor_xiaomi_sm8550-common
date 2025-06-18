@@ -143,6 +143,8 @@
       <VALUE val="0xad000084" name="VOIP_REMOTE_RECORD_SINGLE"/>
       <VALUE val="0xad000085" name="VOIP_REMOTE_RECORD_MULTI"/>
       <VALUE val="0xad000086" name="VOIP_REMOTE_RECORD_SURROUND"/>
+      <VALUE val="0xad001400" name="CUSTOM_ECNS_RAW" description="Used in NLPI use-cases for VUI with custom config"/>
+      <VALUE val="0xad001500" name="CUSTOM_NS_RAW" description="Used in LPI use-cases for VUI with custom config"/>
     </KEY>
     <KEY name="StreamPP_RX" id="0xaf000000" description="Rx Stream Post/Pre Processing Chain">
       <VALUE val="0xaf000001" name="StreamPP_Rx_Default"/>

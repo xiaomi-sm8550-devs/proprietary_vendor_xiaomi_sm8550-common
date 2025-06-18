@@ -59,7 +59,7 @@ case "$target" in
         setprop vendor.media.target_variant "_anorak"
         ;;
     "kalama")
-        setprop vendor.mm.target.enable.qcom_parser 4096118
+        setprop vendor.mm.target.enable.qcom_parser 4096070
         setprop vendor.media.target_variant "_kalama"
         setprop vendor.netflix.bsp_rev "Q8550-36432-1"
         ;;
