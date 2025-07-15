@@ -1170,10 +1170,10 @@ PRODUCT_PACKAGES += \
     CACertService \
     CneApp \
     IWlanService \
+    SoterService \
     TimeService \
     TrustedUIService \
     com.qualcomm.qti.gpudrivers.kalama.api33 \
-    SoterService \
     uimgbaservice \
     ImsRcsService \
     QtiTelephonyService \
