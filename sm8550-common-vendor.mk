@@ -658,7 +658,6 @@ PRODUCT_PACKAGES += \
     libintervmipc \
     libizat_client_api \
     libizat_core \
-    libkaraokepal \
     libkcl \
     libkernelmanager \
     libkeymasterdeviceutils \
