@@ -1441,40 +1441,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.servicetracker@1.2-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libhardware",
-                "libbase",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "vendor.qti.hardware.servicetracker@1.2",
-                "vendor.qti.hardware.servicetracker@1.1",
-                "vendor.qti.hardware.servicetracker@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.soter@1.0-impl",
     owner: "xiaomi",
     strip: {
@@ -22154,15 +22120,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "vendor.qti.hardware.servicetracker@1.2-service.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.qti.hardware.vpp@2.0-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml",
@@ -23551,39 +23508,6 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhidlbase",
                 "vendor.qti.hardware.sensorscalibrate@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.hardware.servicetracker@1.2-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libbase",
-                "libhardware",
-                "libutils",
-                "vendor.qti.hardware.servicetracker@1.2",
-                "vendor.qti.hardware.servicetracker@1.1",
-                "vendor.qti.hardware.servicetracker@1.0",
                 "libc++",
                 "libc",
                 "libm",
