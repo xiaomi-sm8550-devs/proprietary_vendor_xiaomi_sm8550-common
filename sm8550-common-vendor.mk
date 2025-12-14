@@ -338,7 +338,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/perf/perfboostselection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostselection.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/perf/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/powerhint.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/perf/targetavcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetavcsysnodesconfigs.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
@@ -354,7 +353,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_fingerprint_interface.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/pwr/AODPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/AODPowerOptFeature.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/pwr/PSMPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PSMPowerOptFeature.xml \
