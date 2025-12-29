@@ -1172,6 +1172,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V3-ndk \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
+    vendor.xiaomi.hardware.misauth-V1-ndk_platform \
     vendor.xiaomi.hardware.mrm-V1-ndk_platform \
     vendor.xiaomi.hardware.otrpagent@2.0-impl \
     vendor.xiaomi.hardware.otrpagent@2.0 \
