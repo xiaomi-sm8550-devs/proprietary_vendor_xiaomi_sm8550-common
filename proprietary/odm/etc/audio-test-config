@@ -5,12 +5,16 @@ B PCM Source:ASP
 T PCM Source:ASP
 B AMP Enable Switch:1
 T AMP Enable Switch:1
+B ASPTX Ref:Ref
+T ASPTX Ref:Ref
 
 disable
 B PCM Source:None
 B AMP Enable Switch:0
+B ASPTX Ref:None
 T PCM Source:None
 T AMP Enable Switch:0
+T ASPTX Ref:None
 
 
 #playback_top-spk
@@ -18,39 +22,40 @@ T AMP Enable Switch:0
 enable
 T PCM Source:ASP
 T AMP Enable Switch:1
+T ASPTX Ref:Ref
 
 disable
 T PCM Source:None
 T AMP Enable Switch:0
-
+T ASPTX Ref:None
 
 #playback_bot-spk
 #playback_bot-spk_hp
 enable
 B PCM Source:ASP
 B AMP Enable Switch:1
+B ASPTX Ref:Ref
 
 disable
 B PCM Source:None
 B AMP Enable Switch:0
-
+B ASPTX Ref:None
 
 #playback_rcv
 #playback_rcv_hp
 #enable_receiver
 enable
 T PCM Source:ASP
-T AMP PCM Gain:17
+T AMP PCM Gain:5
 T AMP Enable Switch:1
-T Enable RCV Pin Control:1
+T ASPTX Ref:Ref
 
 #disable_receiver
 disable
 T PCM Source:None
 T AMP PCM Gain:18
 T AMP Enable Switch:0
-T Enable RCV Pin Control:0
-
+T ASPTX Ref:None
 
 #playback_headphone
 enable
@@ -334,6 +339,8 @@ B PCM Source:None
 T PCM Source:None
 B AMP Enable Switch:0
 T AMP Enable Switch:0
+B ASPTX Ref:None
+T ASPTX Ref:None
 disable
 
 
