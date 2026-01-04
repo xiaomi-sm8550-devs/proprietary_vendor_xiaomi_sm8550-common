@@ -130,6 +130,12 @@ function configure_memory_parameters() {
 	configure_read_ahead_kb_values
 	echo 100 > /proc/sys/vm/swappiness
 
+	# modify watermark_scale_factor
+	ProductName=`getprop ro.product.name`
+	if [ "$ProductName" == "sheng" ] || [ "$ProductName" == "sheng_global" ]; then
+		echo 10 > /proc/sys/vm/watermark_scale_factor
+	fi
+
 	# Disable periodic kcompactd wakeups. We do not use THP, so having many
 	# huge pages is not as necessary.
 	echo 0 > /proc/sys/vm/compaction_proactiveness

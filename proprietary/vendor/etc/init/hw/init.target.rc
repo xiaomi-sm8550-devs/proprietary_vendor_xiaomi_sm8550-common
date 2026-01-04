@@ -224,6 +224,10 @@ on post-fs-data
     restorecon /sys/module/metis/parameters/del_mi_viptask_sched_lit_core
     chmod 0666 /sys/module/metis/parameters/is_break_enable
     restorecon /sys/module/metis/parameters/is_break_enable
+    chmod 0666 /sys/module/metis/parameters/common_persist_vip_task
+    restorecon /sys/module/metis/parameters/common_persist_vip_task
+    chmod 0666 /sys/module/metis/parameters/clear_persist_vip_task
+    restorecon /sys/module/metis/parameters/clear_persist_vip_task
 
     chmod 0666 /dev/metis_link
     restorecon /dev/metis_link
