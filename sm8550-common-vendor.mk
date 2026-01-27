@@ -16,7 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/android.hardware.nfc@1.2-service-st.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.nfc@1.2-service-st.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/init.cirrus.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.cirrus.rc \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/mrm.rc:$(TARGET_COPY_OUT_ODM)/etc/init/mrm.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
@@ -1045,7 +1044,6 @@ PRODUCT_PACKAGES += \
     libmfido \
     libmiClstc \
     libmiXmlParser \
-    libmiriskmanager \
     libmlipay \
     libmlipay@1.1 \
     libmt \
@@ -1059,8 +1057,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V3-ndk \
     vendor.qti.gnss-V4-ndk \
     vendor.qti.gnss-service \
-    vendor.xiaomi.hardware.misauth-V1-ndk_platform \
-    vendor.xiaomi.hardware.mrm-V1-ndk_platform \
     vendor.xiaomi.hardware.otrpagent@2.0-impl \
     vendor.xiaomi.hardware.otrpagent@2.0 \
     vendor.xiaomi.hardware.tidaservice@1.0 \
@@ -1157,7 +1153,6 @@ PRODUCT_PACKAGES += \
     manifest_vendor.xiaomi.hardware.mtdservice.xml \
     manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml \
     manifest_vendor.xiaomi.hardware.tidaservice.xml \
-    mrm.xml \
     vendor.qti.camera.aon-impl-1.3.xml \
     vendor.qti.camera.postproc-impl.xml \
     vendor.qti.camera.provider.xml \
@@ -1277,7 +1272,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service-st \
     vendor.nxp.hardware.nfc@2.0-service \
     mlipayd@1.1 \
-    mrmd \
     mtd@1.3 \
     tidad@1.2 \
     vendor.xiaomi.hardware.otrpagent@2.0-service
