@@ -6,26 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8550-common
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/UserDefinedMi.udm:$(TARGET_COPY_OUT_ODM)/etc/UserDefinedMi.udm \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/XiaoAiNiZaiNaMi.udm:$(TARGET_COPY_OUT_ODM)/etc/XiaoAiNiZaiNaMi.udm \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/XiaoAiTongXueMi.udm:$(TARGET_COPY_OUT_ODM)/etc/XiaoAiTongXueMi.udm \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio-test-config:$(TARGET_COPY_OUT_ODM)/etc/audio-test-config \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/RES1K.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/RES1K.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/bottom_spk.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/bottom_spk.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/bottom_spk_hp.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/bottom_spk_hp.wav \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/hrtf5c.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/hrtf5c.bin \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/misound_karaoke_res.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_karaoke_res.bin \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/misound_karaokemix_res.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_karaokemix_res.bin \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/misound_res_headphone.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_res_headphone.bin \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/misound_res_spk.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_res_spk.bin \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/misound_res_spk4ch.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misound_res_spk4ch.bin \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/rcv.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/rcv.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/rcv_hp.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/rcv_hp.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/rcv_seal.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/rcv_seal.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/silent-3sec.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/silent-3sec.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/spk.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/spk.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/top_spk.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/top_spk.wav \
-    vendor/xiaomi/sm8550-common/proprietary/odm/etc/audio/top_spk_hp.wav:$(TARGET_COPY_OUT_ODM)/etc/audio/top_spk_hp.wav \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/backend_conf.xml:$(TARGET_COPY_OUT_ODM)/etc/backend_conf.xml \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/android.hardware.gnss-aidl-service-qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.gnss-aidl-service-qti.rc \
     vendor/xiaomi/sm8550-common/proprietary/odm/etc/init/android.hardware.nfc@1.2-service-st.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.nfc@1.2-service-st.rc \
@@ -117,7 +103,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_2.10_enpuv3.pmd \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/audio_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio_diag.cfg \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/camera/placeholder_camera.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/placeholder_camera.txt \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
@@ -157,7 +142,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
@@ -511,15 +495,12 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
-    libAlacSwDec \
-    libApeSwDec \
     libCB \
     libDecoderProcessor \
     libDspIOProxy_stub \
     libEncoderProcessor \
     libEvrcSwCodec \
     libFileMux_proprietary \
-    libFlacSwDec \
     libGPMTEEC_vendor \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
@@ -555,7 +536,6 @@ PRODUCT_PACKAGES += \
     libadsprpc \
     libaodoptfeature \
     libaudio_log_utils \
-    libaudiocloudctrl \
     libbacklight-calib \
     libbatching \
     libbluetooth_audio_session_aidl_qti \
@@ -670,13 +650,10 @@ PRODUCT_PACKAGES += \
     libmdmdetect \
     libmdsprpc \
     libmemutils \
-    libmiam \
     libminkdescriptor \
     libminksocket_vendor \
-    libmisfpsop \
     libmisight \
     libmisoundsa \
-    libmispowerop \
     libmm-hdcpmgr \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
