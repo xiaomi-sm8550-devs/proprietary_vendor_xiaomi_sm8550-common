@@ -20878,6 +20878,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhardware",
                 "vendor.xiaomi.hardware.mrm-V1-ndk_platform",
+                "vendor.xiaomi.hardware.misauth-V1-ndk_platform",
                 "libQSEEComAPI",
                 "libc++",
                 "libc",
@@ -21334,6 +21335,31 @@ cc_prebuilt_library_shared {
                 "libxtadapter",
                 "libizat_core",
                 "libizat_client_api",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.misauth-V1-ndk_platform",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.xiaomi.hardware.misauth-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -26050,6 +26076,7 @@ cc_prebuilt_binary {
                 "libnativewindow",
                 "libhardware",
                 "vendor.xiaomi.hardware.mrm-V1-ndk_platform",
+                "vendor.xiaomi.hardware.misauth-V1-ndk_platform",
                 "libQSEEComAPI",
                 "libmiriskmanager",
                 "libc++",
