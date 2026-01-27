@@ -21609,6 +21609,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.contexthub-service.qmi",
             ],
             shared_libs: [
+                "libbase_shim",
                 "android.hardware.contexthub-V1-ndk",
                 "libbase",
                 "libbinder_ndk",
