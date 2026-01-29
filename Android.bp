@@ -10709,37 +10709,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libslimclient",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libslimclient.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libgps.utils",
-                "liblog",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_encdec",
-                "libdiag",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsmemlog",
     owner: "xiaomi",
     strip: {
@@ -23575,50 +23544,6 @@ cc_prebuilt_binary {
         },
     },
     compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "slim_daemon",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/slim_daemon",
-            ],
-            shared_libs: [
-                "libgps.utils",
-                "liblog",
-                "libdiag",
-                "libqmi_csi",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_encdec",
-                "libloc_mq_client",
-                "libloc_base_util",
-                "libutils",
-                "libhidlbase",
-                "libsensorndkbridge",
-                "android.frameworks.sensorservice@1.0",
-                "libcutils",
-                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
-                "libsnsapi",
-                "libloc_api_v02",
-                "libloc_core",
-                "liblbs_core",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
     strip: {
         none: true,
     },

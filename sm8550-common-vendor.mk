@@ -755,7 +755,6 @@ PRODUCT_PACKAGES += \
     libsensorslog \
     libshsc \
     libsi \
-    libslimclient \
     libsmemlog \
     libsn100u_fw \
     libsn220u_fw \
@@ -1247,7 +1246,6 @@ PRODUCT_PACKAGES += \
     qwesd \
     rmt_storage \
     sensors.qti \
-    slim_daemon \
     sscrpcd \
     ssgqmigd \
     ssgtzd \
