@@ -21666,14 +21666,6 @@ cc_prebuilt_binary {
 }
 
 sh_binary {
-    name: "init.class_main",
-    owner: "xiaomi",
-    src: "proprietary/vendor/bin/init.class_main.sh",
-    filename: "init.class_main.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.kernel.post_boot-kalama",
     owner: "xiaomi",
     src: "proprietary/vendor/bin/init.kernel.post_boot-kalama.sh",
@@ -21690,42 +21682,10 @@ sh_binary {
 }
 
 sh_binary {
-    name: "init.qcom.class_core",
-    owner: "xiaomi",
-    src: "proprietary/vendor/bin/init.qcom.class_core.sh",
-    filename: "init.qcom.class_core.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qcom.early_boot",
-    owner: "xiaomi",
-    src: "proprietary/vendor/bin/init.qcom.early_boot.sh",
-    filename: "init.qcom.early_boot.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qcom.post_boot",
-    owner: "xiaomi",
-    src: "proprietary/vendor/bin/init.qcom.post_boot.sh",
-    filename: "init.qcom.post_boot.sh",
-    soc_specific: true,
-}
-
-sh_binary {
     name: "init.qcom.sensors",
     owner: "xiaomi",
     src: "proprietary/vendor/bin/init.qcom.sensors.sh",
     filename: "init.qcom.sensors.sh",
-    soc_specific: true,
-}
-
-sh_binary {
-    name: "init.qcom",
-    owner: "xiaomi",
-    src: "proprietary/vendor/bin/init.qcom.sh",
-    filename: "init.qcom.sh",
     soc_specific: true,
 }
 
