@@ -213,7 +213,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
-    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.qegahal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qegahal-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
@@ -965,8 +964,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.latency@2.2 \
     vendor.qti.memory.pasrmanager@1.0 \
     vendor.qti.memory.pasrmanager@1.1 \
-    vendor.qti.qegahal-V1-ndk_platform \
-    vendor.qti.qegahal-impl \
     vendor.qti.qspmhal@1.0-impl \
     vendor.qti.qspmhal@1.0 \
     vendor.xiaomi.hardware.blackbox-V1-ndk \
@@ -1102,7 +1099,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
     vendor.qti.hardware.vpp@2.0-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
-    vendor.qti.qegahal-service.xml \
     vendor.xiaomi.modem.qms.xml \
     android.hardware.gnss-aidl-service-qti.xml \
     manifest_vendor.xiaomi.hardware.mfidoca.xml \
@@ -1200,7 +1196,6 @@ PRODUCT_PACKAGES += \
     time_daemon \
     trusteduilistener \
     vendor.dpmd \
-    vendor.qti.qegahal-service \
     vendor.qti.qspmhal@1.0-service \
     vppservice \
     wfdhdcphalservice \

@@ -17625,63 +17625,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qegahal-V1-ndk_platform",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qegahal-V1-ndk_platform.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.qegahal-impl",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qegahal-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "vendor.qti.qegahal-V1-ndk_platform",
-                "liblog",
-                "libcutils",
-                "libbinder_ndk",
-                "libbase",
-                "android.hardware.thermal@2.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.qspmhal@1.0-impl",
     owner: "xiaomi",
     strip: {
@@ -20093,15 +20036,6 @@ prebuilt_etc_xml {
     name: "vendor.qti.hardware.wifidisplaysession-service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.wifidisplaysession-service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "vendor.qti.qegahal-service.xml",
-    owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qegahal-service.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -22884,37 +22818,6 @@ cc_prebuilt_binary {
                 "com.qualcomm.qti.dpm.api@1.0",
                 "vendor.qti.hardware.dpmservice@1.0",
                 "vendor.qti.hardware.dpmservice@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.qegahal-service",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vendor.qti.qegahal-service",
-            ],
-            shared_libs: [
-                "vendor.qti.qegahal-V1-ndk_platform",
-                "vendor.qti.qegahal-impl",
-                "liblog",
-                "libutils",
-                "libbinder_ndk",
-                "libbase",
-                "android.hardware.thermal@2.0",
                 "libc++",
                 "libc",
                 "libm",
