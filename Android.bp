@@ -6102,6 +6102,72 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmlipay",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmlipay.so",
+            ],
+            shared_libs: [
+                "vendor.xiaomi.hardware.mlipay@1.0",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libQSEEComAPI",
+                "libhidlbase",
+                "libhidltransport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmlipay@1.1",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmlipay@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.xiaomi.hardware.mlipay@1.0",
+                "vendor.xiaomi.hardware.mlipay@1.1",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libQSEEComAPI",
+                "libhidlbase",
+                "libhidltransport",
+                "libmisight",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmm-hdcpmgr",
     owner: "xiaomi",
     strip: {
@@ -18609,72 +18675,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libmlipay",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libmlipay.so",
-            ],
-            shared_libs: [
-                "vendor.xiaomi.hardware.mlipay@1.0",
-                "vendor.xiaomi.hardware.mtdservice@1.0",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libQSEEComAPI",
-                "libhidlbase",
-                "libhidltransport",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmlipay@1.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libmlipay@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.xiaomi.hardware.mlipay@1.0",
-                "vendor.xiaomi.hardware.mlipay@1.1",
-                "vendor.xiaomi.hardware.mtdservice@1.0",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libQSEEComAPI",
-                "libhidlbase",
-                "libhidltransport",
-                "libmisight",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libmt",
     owner: "xiaomi",
     strip: {
@@ -19836,6 +19836,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_vendor.xiaomi.hardware.mlipay.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "qcrilhook-saidl.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/qcrilhook-saidl.xml",
@@ -19965,15 +19974,6 @@ prebuilt_etc_xml {
     name: "manifest_vendor.xiaomi.hardware.mfidoca.xml",
     owner: "xiaomi",
     src: "proprietary/odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    device_specific: true,
-}
-
-prebuilt_etc_xml {
-    name: "manifest_vendor.xiaomi.hardware.mlipay.xml",
-    owner: "xiaomi",
-    src: "proprietary/odm/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     device_specific: true,
@@ -21715,6 +21715,41 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+    name: "mlipayd@1.1",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/mlipayd@1.1",
+            ],
+            shared_libs: [
+                "vendor.xiaomi.hardware.mlipay@1.0",
+                "vendor.xiaomi.hardware.mlipay@1.1",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libQSEEComAPI",
+                "libhidlbase",
+                "libhidltransport",
+                "libmisight",
+                "libmlipay@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "mmid",
     owner: "xiaomi",
     target: {
@@ -23113,41 +23148,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
-    device_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "mlipayd@1.1",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/bin/mlipayd@1.1",
-            ],
-            shared_libs: [
-                "vendor.xiaomi.hardware.mlipay@1.0",
-                "vendor.xiaomi.hardware.mlipay@1.1",
-                "vendor.xiaomi.hardware.mtdservice@1.0",
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libQSEEComAPI",
-                "libhidlbase",
-                "libhidltransport",
-                "libmisight",
-                "libmlipay@1.1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     device_specific: true,
 }
 
