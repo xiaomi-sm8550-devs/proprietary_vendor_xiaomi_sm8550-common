@@ -11,4 +11,3 @@ libmialgo_ai_vision.so
 libmialgo_utils.so
 libxmi_slow_motion_mein.so
 libmiocr.so
-libmiphone_capture_bokeh.so
