@@ -1027,7 +1027,6 @@ PRODUCT_PACKAGES += \
     QtiTelephonyService \
     QtiTelephony \
     ims \
-    qcrilmsgtunnel \
     androidx.camera.extensions.impl \
     uimgbalibrary \
     uimgbamanagerlibrary \
@@ -1036,7 +1035,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
     com.qualcomm.qti.imscmservice-V2.2-java \
-    mirilhook \
     qcrilhook \
     vendor.qti.ims.callcapability-V1.0-java \
     vendor.qti.ims.callcapabilityaidlservice-V1-java \
@@ -1065,6 +1063,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
+    xiaomi-modem-common \
     android.hardware.radio.config.xml \
     android.hardware.radio.data.xml \
     android.hardware.radio.messaging.xml \
