@@ -19410,15 +19410,6 @@ dex_import {
 }
 
 dex_import {
-    name: "mirilhook",
-    owner: "xiaomi",
-    jars: [
-        "proprietary/system_ext/framework/mirilhook.jar",
-    ],
-    system_ext_specific: true,
-}
-
-dex_import {
     name: "qcrilhook",
     owner: "xiaomi",
     jars: [
@@ -19666,6 +19657,15 @@ dex_import {
     owner: "xiaomi",
     jars: [
         "proprietary/system_ext/framework/vendor.qti.ims.rcsuceaidlservice-V1-java.jar",
+    ],
+    system_ext_specific: true,
+}
+
+dex_import {
+    name: "xiaomi-modem-common",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/xiaomi-modem-common.jar",
     ],
     system_ext_specific: true,
 }
