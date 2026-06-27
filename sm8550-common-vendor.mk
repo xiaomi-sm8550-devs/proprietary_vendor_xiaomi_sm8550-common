@@ -203,6 +203,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
+    vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.display.composer-service_sm8550.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.display.composer-service_sm8550.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.factory@1.0-service.rc \
     vendor/xiaomi/sm8550-common/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
@@ -508,12 +509,17 @@ PRODUCT_PACKAGES += \
     libdiag \
     libdigital-dimming \
     libdisp-aba \
+    libdisplayconfig.qti \
+    libdisplaydebug \
+    libdisplayfeature \
+    libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
     libdpmqmihal \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libdrmutils \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
@@ -525,6 +531,7 @@ PRODUCT_PACKAGES += \
     libfastcvdsp_stub \
     libfastcvopt \
     libfcsam \
+    libfilefinder \
     libgame_enhance \
     libgarden \
     libgarden_haltests_e2e \
@@ -534,12 +541,19 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     libgps.utils \
     libgpt \
+    libgpu_tonemapper \
     libgpudataproducer \
+    libgralloc.qti \
+    libgralloccore \
+    libgrallocutils \
     libgsl \
     libhdr_backlight_adapter \
+    libhdr_hbm \
     libhdr_tm \
     libhdrdynamic \
     libhdrdynamicootf \
+    libhdrvivid \
+    libhistogram \
     libidl \
     libintervmipc \
     libizat_client_api \
@@ -663,12 +677,14 @@ PRODUCT_PACKAGES += \
     libqcrildataaidl \
     libqcrildatactl \
     libqcrildataqos \
+    libqdMetaData \
     libqdcm-algo \
     libqdcm-json-mode-parser \
     libqdcm-mode-parser \
     libqdi \
     libqdp \
     libqdpr \
+    libqdutils \
     libqisl \
     libqmi \
     libqmi_cci \
@@ -686,6 +702,7 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqrtrclient \
     libqseed3 \
+    libqservice \
     libqsocket \
     libqti-perfd-client \
     libqti-perfd \
@@ -710,10 +727,14 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation_stub \
     libscveObjectTracker \
     libscveObjectTracker_stub \
+    libsdedrm \
     libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
+    libsdmcore \
+    libsdmdal \
     libsdmextension \
+    libsdmutils \
     libsdsprpc \
     libsecureui_svcsock \
     libsensorcal \
@@ -996,6 +1017,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     consumerir.qcom \
     libaudioroute_ext \
+    libclient2slpi.notifier \
     libmfido \
     libmiClstc \
     libmiXmlParser \
@@ -1088,6 +1110,7 @@ PRODUCT_PACKAGES += \
     qms-saidl.xml \
     qtiradio-saidl.xml \
     vendor.qti.diag.hal.service.xml \
+    vendor.qti.hardware.display.composer-service_sm8550.xml \
     vendor.qti.hardware.limits-service.xml \
     vendor.qti.hardware.perf.xml \
     vendor.qti.hardware.power.powermodule.xml \
@@ -1132,6 +1155,7 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
     vendor.qti.hardware.alarm@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.limits@1.2-service \
     vendor.qti.hardware.perf-hal-service \
